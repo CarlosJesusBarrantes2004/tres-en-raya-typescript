@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contenedor {
+  @apply h-screen container mx-auto flex items-center justify-center;
+}
+
+.juego {
+  @apply flex flex-col w-1/4;
+}
+
+.score {
+  @apply flex justify-between mb-3;
+}
+
+.jugador {
+  @apply text-sm font-bold;
+}
+
+.jugador__turno {
+  @apply text-red-500 font-extrabold;
+}
+
+.tablero {
+  @apply grid grid-cols-3 mx-auto;
+}
+
+.cuadro {
+  @apply border border-gray-500 p-2 w-10 h-10;
+}
+
+.cuadro:hover {
+  @apply cursor-pointer;
+}
